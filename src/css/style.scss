@@ -1,0 +1,85 @@
+
+$off-white: #EEE8D6;
+$darkblue: #022933;
+$yellow: #FFBA00;
+$blue: #0076A3;
+
+
+$border-radius: 20px;
+
+button{
+  background-color: $off-white;
+}
+
+header{
+  width: 100%;
+
+  .loginform{
+    text-align: right;
+
+    label{
+      font-size: larger;
+      font-weight: bolder;
+    }
+  }
+
+}
+
+.articlewriteform{
+  text-align: center;
+
+  %articlewrite{
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+  .articlewrite--title{
+    @extend %articlewrite;
+
+    input{
+      width: 250px;
+    }
+
+  }
+
+  .articlewrite--content{
+    @extend %articlewrite;
+
+    textarea{
+      width: 350px;
+      height: 300px;
+    }
+  }
+
+
+}
+
+
+.posts {
+  text-align: center;
+  %article {
+    margin-top: 50px;
+    width: 33%;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  .article--first {
+    @extend %article;
+    background-color: $blue;
+    opacity: 60%;
+  }
+
+  .article--second {
+    @extend %article;
+    background-color: $yellow;
+    opacity: 90%;
+  }
+
+  .article--third {
+    @extend %article;
+    background-color: $blue;
+    opacity: 60%;
+  }
+}
+
